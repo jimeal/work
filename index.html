@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+  <title>Document</title>
+
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Minified UMD bundle -->
+  <script src="./split.js"></script>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./index.js" defer></script>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="inner">
+
+      <div class="mobile scroll-spy">
+        <img class="back-to-position-y to-top delay-0" src="./img/mobile.png" alt="모빌리언스 카드 모바일화면">
+      </div>
+
+      <!-- 무제한 카드 혜택에 -->
+      <section class="top scroll-spy">
+        <h2 class="sr-only">무제한 카드 혜택에</h2>
+        <div class="top-content back-to-position-x to-left delay-2">
+          <div class="top-text1 text">무제한</div>
+          <div class="unlimite con-img"></div>
+          <div class="top-text2 text">
+            <span>카드 </span>
+            <img src="./img/plus.png" alt="플러스">
+            <span> 혜택에</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 편리함을 더하다 -->
+      <section class="bottom scroll-spy">
+        <h2 class="sr-only">편리함을 더하다</h2>
+        <div class="bottom-content back-to-position-x to-right delay-3">
+          <div class="btm-emoji con-img"></div>
+
+          <article class="text-ani">
+            <div class="btm-text1 text v-slides">
+              <div class="v-slide">편리함을</div>
+              <div class="v-slide">즐거움을</div>
+              <div class="v-slide">청소년을</div>
+            </div>
+          </article>
+
+          <div class="btm-text2 text">더하다</div>
+          <div class="btm-hash con-img"></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
